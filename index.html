@@ -8,74 +8,112 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  
-<header id="intro">
-  <div class="container" style="text-align: center;">
-    <img src="assets/img/eya-profile.jpg" alt="Eya Lahyani" class="profile-pic">
-    <h1>Bonjour, je suis <span>Eya Lahyani</span></h1>
-    <p>Étudiante en Master IA à l’Université du Mans</p>
-    <p class="availability">📍 Disponible pour un stage à partir d’avril 2026</p>
-    <a href="#projets" class="btn">📂 Voir mes projets</a>
-  </div>
-</header>
-
-
-  <section id="apropos">
-    <div class="container">
-      <h2>À propos de moi</h2>
-      <p>
-        Actuellement en 1ère année de Master en Intelligence Artificielle à l’Université du Mans, je suis à la recherche d’un stage me permettant de valoriser mes compétences en développement Full Stack (Java, Angular, Spring Boot) issues de ma licence, tout en explorant de nouveaux défis dans l’IA appliquée.
-      </p>
-      <p>
-        Je suis une personne curieuse, motivée et flexible, capable de m’adapter rapidement aux nouvelles technologies. Même si je découvre certains domaines, je sais clairement où je veux aller : contribuer à des projets techniques concrets et progresser dans un environnement technologique stimulant.
-      </p>
-    </div>
-  </section>
-
-  <section id="competences">
-    <div class="container">
-      <h2>🛠️ Compétences Techniques</h2>
-      <ul>
-        <li>Langages : Java, JavaScript, TypeScript, PHP, C#</li>
-        <li>Frameworks : Spring Boot, Angular, React, Laravel</li>
-        <li>Bases de données : PostgreSQL, MySQL</li>
-        <li>Outils : Git, Docker, Keycloak, Postman</li>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="brand">Eya<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-  </section>
+  </nav>
 
-  <section id="projets">
-    <div class="container">
-      <h2>📌 Projets</h2>
-      <div class="project-list">
-        <div class="project-card">
-          <h3>Gestion de parc automobile</h3>
-          <p>Spring Boot, Angular, Keycloak, PostgreSQL</p>
-        </div>
-        <div class="project-card">
-          <h3>Atelier mécanique</h3>
-          <p>Spring Boot, React, MySQL</p>
-        </div>
-        <div class="project-card">
-          <h3>Application de facturation</h3>
-          <p>PHP, MySQL</p>
+  <header id="home" class="hero" style="background-image:url('assets/img/hero-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <img src="assets/img/profile.jpg" alt="Eya Lahyani" class="avatar" />
+      <h1>Hi, I'm <span>Eya Lahyani</span></h1>
+      <p class="subtitle">Master IA @ Le Mans Université • Full‑Stack (Java/Angular) • Microservices</p>
+      <p class="availability">📍 Disponible pour un stage à partir d’avril 2026</p>
+      <div class="cta">
+        <a class="btn" href="assets/cv/Eya_Lahyani_CV.pdf" download>Télécharger mon CV</a>
+        <a class="btn ghost" href="#projects">Voir mes projets</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container two-col">
+      <div>
+        <h2>À propos</h2>
+        <p>Actuellement en <strong>1ère année de Master en Intelligence Artificielle</strong> à l’Université du Mans, je recherche un <strong>stage</strong> pour valoriser mes compétences en <strong>Full‑Stack</strong> (Java, Angular, Spring Boot) et explorer de nouveaux défis en <strong>IA appliquée</strong>.</p>
+        <p>Curieuse, motivée et flexible, je m’adapte rapidement aux nouvelles technologies et j’aime contribuer à des projets concrets dans un environnement stimulant.</p>
+        <ul class="highlights">
+          <li>Ingénierie logicielle • Microservices • DevOps</li>
+          <li>PostgreSQL • MySQL • Keycloak • Docker • Git</li>
+        </ul>
+      </div>
+      <div class="card uni">
+        <img src="assets/img/le-mans.png" alt="Le Mans Université" />
+        <div>
+          <h3>Le Mans Université</h3>
+          <p>Master Informatique – IA (2025–2027)</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="skills" class="section alt">
     <div class="container">
-      <h2>📫 Contact</h2>
+      <h2>Compétences</h2>
+      <div class="skills-grid">
+        <div class="chip">Java</div>
+        <div class="chip">Angular</div>
+        <div class="chip">Spring Boot</div>
+        <div class="chip">React</div>
+        <div class="chip">PHP</div>
+        <div class="chip">Laravel</div>
+        <div class="chip">C#</div>
+        <div class="chip">PostgreSQL</div>
+        <div class="chip">MySQL</div>
+        <div class="chip">Docker</div>
+        <div class="chip">Keycloak</div>
+        <div class="chip">Git / GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projets</h2>
+      <div class="grid">
+        <article class="card proj">
+          <h3>Gestion de parc automobile</h3>
+          <p>Application de gestion d’ordres de mission et véhicules — <em>Spring Boot, Angular, Keycloak, PostgreSQL</em>.</p>
+          <div class="tags"><span>Back‑end</span><span>Front‑end</span><span>Sécurité</span></div>
+        </article>
+        <article class="card proj">
+          <h3>Atelier mécanique</h3>
+          <p>Suivi des réparations et automatisation de la facturation — <em>Spring Boot, React, MySQL</em>.</p>
+          <div class="tags"><span>REST API</span><span>UI</span></div>
+        </article>
+        <article class="card proj">
+          <h3>Application de facturation</h3>
+          <p>Gestion factures & clients — <em>PHP, MySQL</em>.</p>
+          <div class="tags"><span>CRUD</span><span>SQL</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container contact">
+      <h2>Contact</h2>
       <p>Email : <a href="mailto:Eya.Lahyani.Etu@univ-lemans.fr">Eya.Lahyani.Etu@univ-lemans.fr</a></p>
       <p>GitHub : <a href="https://github.com/eyalahyani">github.com/eyalahyani</a></p>
       <p>LinkedIn : <a href="https://www.linkedin.com/in/eya-lahyani-9284172a4/">eya-lahyani</a></p>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Eya Lahyani. Tous droits réservés.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Eya Lahyani — Portfolio</p>
+    </div>
   </footer>
 
+  <script src="assets/js/app.js"></script>
 </body>
 </html>

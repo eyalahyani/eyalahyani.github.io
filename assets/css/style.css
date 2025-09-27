@@ -1,100 +1,51 @@
 
-:root {
-  --primary-color: #6a1b9a;
-  --text-color: #333;
-  --bg-light: #fdfdfd;
-  --accent-color: #f50057;
-}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;color:#2b2b2b;background:#fff}
+a{color:inherit}
+.navbar{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.85);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,.06)}
+.nav-inner{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:.7rem 1rem}
+.brand{font-weight:800;letter-spacing:.5px;text-decoration:none}
+.brand span{color:#6a1b9a}
+.nav-links{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
+.nav-links a{text-decoration:none;padding:.4rem .6rem;border-radius:6px}
+.nav-links a:hover{background:#f1eef6}
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: var(--bg-light);
-  color: var(--text-color);
-  line-height: 1.6;
-}
+.hero{position:relative;min-height:75vh;background-size:cover;background-position:center}
+.hero .overlay{position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,.45), rgba(0,0,0,.55))}
+.hero-content{position:relative;z-index:1;max-width:900px;margin:auto;text-align:center;color:#fff;padding:6rem 1rem}
+.avatar{width:140px;height:140px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 6px 20px rgba(0,0,0,.35);margin-bottom:1rem}
+.hero h1{font-size:2.4rem;margin:.2rem 0}
+.hero h1 span{font-weight:800}
+.subtitle{opacity:.95}
+.availability{margin:.4rem 0 .8rem}
+.btn{display:inline-block;background:#ffffff;color:#5a26a1;padding:.7rem 1.1rem;font-weight:700;border-radius:8px;text-decoration:none;margin:.2rem}
+.btn.ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.8)}
+.btn:hover{transform:translateY(-1px)}
 
-header#intro {
-  background: linear-gradient(to right, #6a1b9a, #ab47bc);
-  color: white;
-  padding: 4rem 1rem;
-  text-align: center;
-}
+.section{padding:3.2rem 1rem}
+.section.alt{background:#faf8fc}
+.container{max-width:1100px;margin:auto}
+.two-col{display:grid;grid-template-columns:2fr 1fr;gap:1.5rem}
+.card{border:1px solid #eee;border-radius:12px;padding:1rem;background:#fff;box-shadow:0 6px 16px rgba(0,0,0,.04)}
+.card.uni{display:flex;align-items:center;gap:1rem}
+.card.uni img{width:64px;height:auto}
+.highlights{padding-left:1rem}
 
-header#intro h1 span {
-  color: #fff;
-  font-weight: bold;
-  font-size: 2em;
-}
+.skills-grid{display:flex;flex-wrap:wrap;gap:.6rem}
+.chip{padding:.45rem .7rem;background:#efe7fb;border:1px solid #e0d3ff;border-radius:999px;font-weight:600;color:#5a26a1}
 
-header#intro .availability {
-  font-size: 1.1em;
-  margin: 0.5rem 0;
-}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.proj h3{margin:.2rem 0}
+.tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.5rem}
+.tags span{background:#f3f3f3;border-radius:999px;padding:.25rem .6rem;font-size:.9rem}
 
-header#intro .btn {
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 0.7rem 1.5rem;
-  background: white;
-  color: #6a1b9a;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
+.contact a{color:#5a26a1;text-decoration:none}
+.contact a:hover{text-decoration:underline}
 
-section {
-  padding: 3rem 1rem;
-}
+.footer{background:#111;color:#ccc}
+.footer .container{padding:1rem 1rem;text-align:center}
 
-.container {
-  max-width: 900px;
-  margin: auto;
-}
-
-h2 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-ul {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-}
-
-.project-list {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.project-card {
-  border: 1px solid #ddd;
-  padding: 1.5rem;
-  border-radius: 8px;
-  transition: transform .3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-footer {
-  background: #222;
-  color: #bbb;
-  text-align: center;
-  padding: 1.2rem;
-  font-size: 0.9rem;
-}
-
-
-.profile-pic {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid white;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+@media (max-width: 820px){
+  .two-col{grid-template-columns:1fr}
+  .nav-links{display:none}
 }
