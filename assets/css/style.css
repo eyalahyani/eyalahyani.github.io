@@ -1,0 +1,100 @@
+
+:root {
+  --primary-color: #6a1b9a;
+  --text-color: #333;
+  --bg-light: #fdfdfd;
+  --accent-color: #f50057;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-light);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header#intro {
+  background: linear-gradient(to right, #6a1b9a, #ab47bc);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+header#intro h1 span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+header#intro .availability {
+  font-size: 1.1em;
+  margin: 0.5rem 0;
+}
+
+header#intro .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: white;
+  color: #6a1b9a;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+section {
+  padding: 3rem 1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.project-list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform .3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #222;
+  color: #bbb;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+}
+
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
